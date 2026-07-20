@@ -1,0 +1,144 @@
+Script started on 2026-07-20 15:11:41+00:00 [TERM="dumb" TTY="/dev/pts/0" COLUMNS="148" LINES="46"]
+kartik@LAPTOP-NPJFOSTG:~$                                                                        kartik@LAPTOP-NPJFOSTG:~$ whoami
+kartik
+kartik@LAPTOP-NPJFOSTG:~$ id
+uid=1000(kartik) gid=1000(kartik) groups=1000(kartik),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),989(docker)
+kartik@LAPTOP-NPJFOSTG:~$ groups
+kartik adm cdrom sudo dip plugdev users docker
+kartik@LAPTOP-NPJFOSTG:~$ cat   /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:996:996:systemd Time Synchronization:/:/usr/sbin/nologin
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+messagebus:x:101:101::/nonexistent:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+systemd-resolve:x:991:991:systemd Resolver:/:/usr/sbin/nologin
+uuidd:x:103:103::/run/uuidd:/usr/sbin/nologin
+landscape:x:104:105::/var/lib/landscape:/usr/sbin/nologin
+polkitd:x:990:990:User for polkitd:/:/usr/sbin/nologin
+kartik:x:1000:1000:,,,:/home/kartik:/bin/bash
+vishal:x:1001:1001::/home/vishal:/bin/sh
+jfrog:x:1002:1003::/opt/jfrog:/bin/bash
+artifactory:x:999:988::/var/opt/jfrog/artifactory:/usr/sbin/nologin
+om:x:1003:1004::/home/om:/bin/bash
+postgres:x:106:110:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+Vishal:x:1004:1006::/home/Vishal:/bin/sh
+john:x:1005:1007::/home/john:/bin/sh
+kartik@LAPTOP-NPJFOSTG:~$ cat /etc/passwd      groups
+cat: /etc/groups: No such file or directory
+kartik@LAPTOP-NPJFOSTG:~$ cat /etc/groups 
+root:x:0:john
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,kartik
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:kartik
+floppy:x:25:
+tape:x:26:
+sudo:x:27:kartik,om
+audio:x:29:
+dip:x:30:kartik
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:kartik
+staff:x:50:
+games:x:60:
+users:x:100:kartik
+nogroup:x:65534:
+systemd-journal:x:999:
+systemd-network:x:998:
+crontab:x:997:
+systemd-timesync:x:996:
+input:x:995:
+sgx:x:994:
+kvm:x:993:
+render:x:992:
+messagebus:x:101:
+syslog:x:102:
+systemd-resolve:x:991:
+uuidd:x:103:
+_ssh:x:104:
+landscape:x:105:
+polkitd:x:990:
+admin:x:106:
+netdev:x:107:
+kartik:x:1000:
+newuser:x:1002:
+docker:x:989:kartik
+ssl-cert:x:108:postgres
+vishal:x:1001:
+jfrog:x:1003:
+artifactory:x:988:
+om:x:1004:
+jon:x:1005:
+postgres:x:110:
+Vishal:x:1006:
+john:x:1007:
+kartik@LAPTOP-NPJFOSTG:~$ id kartik 
+uid=1000(kartik) gid=1000(kartik) groups=1000(kartik),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),989(docker)
+kartik@LAPTOP-NPJFOSTG:~$ id vishal 
+uid=1001(vishal) gid=1001(vishal) groups=1001(vishal)
+kartik@LAPTOP-NPJFOSTG:~$ u sudo useradd itachi
+kartik@LAPTOP-NPJFOSTG:~$ ca  user    u sudo usermod -aG itachi                      o groupadd demo-user
+kartik@LAPTOP-NPJFOSTG:~$ sudo groupadd demo-useruseradd itachi    groupadd demo-user                       sudo usermod -aG demo-user itachi
+kartik@LAPTOP-NPJFOSTG:~$ i  d itachi
+uid=1006(itachi) gid=1008(itachi) groups=1008(itachi),1009(demo-user)
+kartik@LAPTOP-NPJFOSTG:~$ sudo passwd itsa  achi
+New password: 
+Retype new password: 
+passwd: password updated successfully
+kartik@LAPTOP-NPJFOSTG:~$ u sudo userdel -r iat  tachi
+userdel: itachi mail spool (/var/mail/itachi) not found
+userdel: itachi home directory (/home/itachi) not found
+kartik@LAPTOP-NPJFOSTG:~$ sudo userdel -r itachi itachi  itachi itachi 
+userdel: user 'itachi' does not exist
+kartik@LAPTOP-NPJFOSTG:~$ id itachi
+id: ‘itachi’: no such user
+kartik@LAPTOP-NPJFOSTG:~$ groups demo-user
+groups: ‘demo-user’: no such user
+kartik@LAPTOP-NPJFOSTG:~$ groups demo-user demo-user 
+Command 'group' not found, did you mean:
+  command 'grop' from deb grop (2:0.10-1.2)
+  command 'groups' from deb coreutils (9.4-3ubuntu6.2)
+Try: sudo apt install <deb name>
+kartik@LAPTOP-NPJFOSTG:~$ cl  sudo g      exit
+exit
+
+Script done on 2026-07-20 15:15:07+00:00 [COMMAND_EXIT_CODE="127"]

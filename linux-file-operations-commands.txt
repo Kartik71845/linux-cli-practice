@@ -1,0 +1,117 @@
+Script started on 2026-07-20 14:39:45+00:00 [TERM="dumb" TTY="/dev/pts/0" COLUMNS="72" LINES="45"]
+kartik@LAPTOP-NPJFOSTG:~$ touch file  1 if  file2 file  3        
+kartik@LAPTOP-NPJFOSTG:~$ cp    mv file 2 fiel       1 file3-renamed
+kartik@LAPTOP-NPJFOSTG:~$ ls
+1
+Devops_tools_practice
+Dockerfile
+My-Repository
+Project3
+ansible-docker
+ansiblefordocker.sh
+artifactory
+demo
+devops-project-09-Jenkins-CICD-with-ECS-ECR
+docker
+docker-compose.yml
+docker.sh
+file2
+file3-renamed
+file_10
+habit-tracker
+hello_world
+jenkins_home
+jf
+k8stws
+kartik
+keys
+kubernetes
+linux-cli-practice
+linux-commands.txt
+linux-file-operations-commands.txt
+linux-navigation-commands.txt
+linux-practice
+naruto.pem
+playbooks
+session-manager-plugin.deb
+snap
+streakflow
+vishal
+kartik@LAPTOP-NPJFOSTG:~$ ls | grep file
+Dockerfile
+file2
+file3-renamed
+file_10
+linux-file-operations-commands.txt
+kartik@LAPTOP-NPJFOSTG:~$ cat docker.sh
+#!/bin/bash
+
+# ===== Configuration =====
+CONTAINER_NAME="ansible_node"
+IMAGE_NAME="ubuntu:20.04"
+ROOT_PASSWORD="kartik123"  # Change if needed
+ANSIBLE_DIR="$HOME/ansible-docker"  # Change if your hosts.ini is elsewhere
+INVENTORY_FILE="$ANSIBLE_DIR/hosts.ini"
+
+echo "🔹 Creating Docker container for Ansible..."
+
+# 1️⃣ Ensure Ansible project directory exists
+mkdir -p "$ANSIBLE_DIR"
+
+# 2️⃣ Ensure hosts.ini exists
+if [ ! -f "$INVENTORY_FILE" ]; then
+    echo "[docker_nodes]" > "$INVENTORY_FILE"
+fi
+
+# 3️⃣ Pull Ubuntu image if not already present
+docker pull $IMAGE_NAME
+
+# 4️⃣ Run container in background
+docker run -dit --name $CONTAINER_NAME --hostname ansible-node $IMAGE_NAME
+
+# 5️⃣ Install SSH, sudo, Python inside container
+echo "🔹 Installing SSH and Python inside the container..."
+docker exec -it $CONTAINER_NAME bash -c "
+  apt update &&
+  apt install -y openssh-server sudo python3 &&
+  echo 'root:$ROOT_PASSWORD' | chpasswd &&
+  service ssh start
+"
+
+# 6️⃣ Get container IP
+CONTAINER_IP=$(docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $CONTAINER_NAME)
+
+# 7️⃣ Remove old entry if exists
+sed -i "/$CONTAINER_IP/d" "$INVENTORY_FILE"
+
+# 8️⃣ Add container to Ansible inventory automatically
+echo "$CONTAINER_IP ansible_user=root ansible_password=$ROOT_PASSWORD ansible_python_interpreter=/usr/bin/python3" >> "$INVENTORY_FILE"
+
+# 9️⃣ Show final info
+echo ""
+echo "✅ Container '$CONTAINER_NAME' is ready for Ansible!"
+echo "📌 Container IP: $CONTAINER_IP"
+echo "📌 Root password: $ROOT_PASSWORD"
+echo "📌 Ansible inventory updated: $INVENTORY_FILE"
+echo ""
+echo "Test connection with:"
+echo "ansible -i $INVENTORY_FILE docker_nodes -m ping"
+echo ""
+echo "Then run your playbooks as usual."
+
+kartik@LAPTOP-NPJFOSTG:~$ exho se      cho "hello o world" > MY y-Repository/
+bash: My-Repository/: Is a directory
+kartik@LAPTOP-NPJFOSTG:~$ echo "hello world" > My-Repository/              fileq 1
+kartik@LAPTOP-NPJFOSTG:~$ cat fileq 1
+hello world
+kartik@LAPTOP-NPJFOSTG:~$ rm file1
+kartik@LAPTOP-NPJFOSTG:~$ ls rm file1cat file1echo "hello world" > file1My-Repository/kartik@LAPTOP-NPJFOSTG:~$ cat docker.sh                      ls | grep file
+Dockerfile
+file2
+file3-renamed
+file_10
+linux-file-operations-commands.txt
+kartik@LAPTOP-NPJFOSTG:~$ exit 
+exit
+
+Script done on 2026-07-20 14:42:22+00:00 [COMMAND_EXIT_CODE="0"]

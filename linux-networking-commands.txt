@@ -1,0 +1,117 @@
+Script started on 2026-07-20 15:19:41+00:00 [TERM="dumb" TTY="/dev/pts/0" COLUMNS="148" LINES="46"]
+kartik@LAPTOP-NPJFOSTG:~$ ping google.com
+PING google.com (142.250.143.102) 56(84) bytes of data.
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=1 ttl=113 time=39.8 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=2 ttl=113 time=29.5 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=3 ttl=113 time=30.9 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=4 ttl=113 time=37.8 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=5 ttl=113 time=38.5 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=6 ttl=113 time=51.0 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=7 ttl=113 time=43.2 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=8 ttl=113 time=35.3 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=9 ttl=113 time=41.3 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=10 ttl=113 time=47.4 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=11 ttl=113 time=45.6 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=12 ttl=113 time=37.8 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=13 ttl=113 time=30.2 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=14 ttl=113 time=79.3 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=15 ttl=113 time=40.7 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=16 ttl=113 time=37.6 ms
+64 bytes from pt-in-f102.1e100.net (142.250.143.102): icmp_seq=17 ttl=113 time=33.2 ms
+^C
+--- google.com ping statistics ---
+17 packets transmitted, 17 received, 0% packet loss, time 16050ms
+rtt min/avg/max/mdev = 29.473/41.131/79.335/11.172 ms
+kartik@LAPTOP-NPJFOSTG:~$ ss -tun lnp 80  " | grep 80
+tcp   LISTEN 0      511                 *:80              *:*          
+kartik@LAPTOP-NPJFOSTG:~$ curl kartikbuilds.in
+Redirecting...kartik@LAPTOP-NPJFOSTG:~$ ^C
+kartik@LAPTOP-NPJFOSTG:~$ curl kartikbuilds.inhcurl kartikbuilds.intcurl kartikbuilds.incurl kartikbuilds.in curl kartikbuilds.in kartik@LAPTOP-NPJFOSTG:~$ ckartik@LAPTOP-NPJFOSTG:~$ cukartik@LAPTOP-NPJFOSTG:~$ curkartik@LAPTOP-NPJFOSTG:~$ curlkartik@LAPTOP-NPJFOSTG:~$ curl kartik@LAPTOP-NPJFOSTG:~$ curl kkartik@LAPTOP-NPJFOSTG:~$ curl katkartikbuilds.inhkartikbuilds.intkartikbuilds.intkartikbuilds.inkartikbuilds.in kartikbuilds.in kartikbuilds.in kartikbuilds.in hkartikbuilds.intkartikbuilds.intkartikbuilds.inpkartikbuilds.in:kartikbuilds.in/kartikbuilds.in/kartikbuilds.in
+Redirecting...kartik@LAPTOP-NPJFOSTG:~$ ^C
+kartik@LAPTOP-NPJFOSTG:~$ curl http://kartikbuilds.in               google.com
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
+kartik@LAPTOP-NPJFOSTG:~$ dig google.com
+
+; <<>> DiG 9.18.39-0ubuntu0.24.04.5-Ubuntu <<>> google.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 24703
+;; flags: qr rd ra; QUERY: 1, ANSWER: 6, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;google.com.			IN	A
+
+;; ANSWER SECTION:
+google.com.		271	IN	A	142.250.143.102
+google.com.		271	IN	A	142.250.143.138
+google.com.		271	IN	A	142.250.143.113
+google.com.		271	IN	A	142.250.143.100
+google.com.		271	IN	A	142.250.143.139
+google.com.		271	IN	A	142.250.143.101
+
+;; Query time: 60 msec
+;; SERVER: 10.255.255.254#53(10.255.255.254) (UDP)
+;; WHEN: Mon Jul 20 15:21:07 UTC 2026
+;; MSG SIZE  rcvd: 135
+
+kartik@LAPTOP-NPJFOSTG:~$ ns lookup good gle.com
+Command 'ns' not found, but can be installed with:
+sudo apt install ns2
+kartik@LAPTOP-NPJFOSTG:~$ ns lookup google.comlookup google.com 
+Server:		10.255.255.254
+Address:	10.255.255.254#53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 142.250.143.102
+Name:	google.com
+Address: 142.250.143.138
+Name:	google.com
+Address: 142.250.143.113
+Name:	google.com
+Address: 142.250.143.100
+Name:	google.com
+Address: 142.250.143.139
+Name:	google.com
+Address: 142.250.143.101
+Name:	google.com
+Address: 2404:6800:4000:100c::71
+Name:	google.com
+Address: 2404:6800:4000:100c::8b
+Name:	google.com
+Address: 2404:6800:4000:100c::8a
+Name:	google.com
+Address: 2404:6800:4000:100c::65
+
+kartik@LAPTOP-NPJFOSTG:~$ traceroute google.com
+traceroute to google.com (142.250.143.102), 30 hops max, 60 byte packets
+ 1  LAPTOP-NPJFOSTG.mshome.net (172.18.240.1)  0.598 ms  0.526 ms  0.510 ms
+ 2  Unit (192.168.1.1)  3.437 ms  3.421 ms  4.600 ms
+ 3  10.240.170.82 (10.240.170.82)  62.773 ms  62.759 ms  57.547 ms
+ 4  172.28.1.202 (172.28.1.202)  38.466 ms 172.28.1.203 (172.28.1.203)  32.875 ms  32.768 ms
+ 5  182.79.50.133 (182.79.50.133)  32.751 ms  32.738 ms  32.679 ms
+ 6  116.119.164.99 (116.119.164.99)  28.106 ms 116.119.106.216 (116.119.106.216)  35.529 ms 116.119.161.131 (116.119.161.131)  35.420 ms
+ 7  * * *
+ 8  * * *
+ 9  142.250.61.202 (142.250.61.202)  35.451 ms 142.250.210.182 (142.250.210.182)  29.671 ms 142.250.214.100 (142.250.214.100)  35.389 ms
+10  72.14.232.78 (72.14.232.78)  35.478 ms 192.178.110.198 (192.178.110.198)  37.237 ms 192.178.110.104 (192.178.110.104)  36.155 ms
+11  192.178.82.99 (192.178.82.99)  36.143 ms 172.253.65.15 (172.253.65.15)  27.201 ms 142.251.230.117 (142.251.230.117)  32.670 ms
+12  209.85.246.70 (209.85.246.70)  32.635 ms 209.85.241.222 (209.85.241.222)  32.540 ms  50.415 ms
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  pt-in-f102.1e100.net (142.250.143.102)  34.305 ms  52.518 ms  52.546 ms
+kartik@LAPTOP-NPJFOSTG:~$ exit
+exit
+
+Script done on 2026-07-20 15:21:40+00:00 [COMMAND_EXIT_CODE="0"]

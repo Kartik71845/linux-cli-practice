@@ -1,0 +1,259 @@
+Script started on 2026-07-20 14:50:17+00:00 [TERM="dumb" TTY="/dev/pts/2" COLUMNS="72" LINES="45"]
+kartik@LAPTOP-NPJFOSTG:~$ sort docker.sh
+
+
+
+
+
+
+
+
+
+
+
+
+    echo "[docker_nodes]" > "$INVENTORY_FILE"
+  apt install -y openssh-server sudo python3 &&
+  apt update &&
+  echo 'root:$ROOT_PASSWORD' | chpasswd &&
+  service ssh start
+"
+# 1️⃣ Ensure Ansible project directory exists
+# 2️⃣ Ensure hosts.ini exists
+# 3️⃣ Pull Ubuntu image if not already present
+# 4️⃣ Run container in background
+# 5️⃣ Install SSH, sudo, Python inside container
+# 6️⃣ Get container IP
+# 7️⃣ Remove old entry if exists
+# 8️⃣ Add container to Ansible inventory automatically
+# 9️⃣ Show final info
+# ===== Configuration =====
+#!/bin/bash
+ANSIBLE_DIR="$HOME/ansible-docker"  # Change if your hosts.ini is elsewhere
+CONTAINER_IP=$(docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $CONTAINER_NAME)
+CONTAINER_NAME="ansible_node"
+IMAGE_NAME="ubuntu:20.04"
+INVENTORY_FILE="$ANSIBLE_DIR/hosts.ini"
+ROOT_PASSWORD="kartik123"  # Change if needed
+docker exec -it $CONTAINER_NAME bash -c "
+docker pull $IMAGE_NAME
+docker run -dit --name $CONTAINER_NAME --hostname ansible-node $IMAGE_NAME
+echo ""
+echo ""
+echo ""
+echo "$CONTAINER_IP ansible_user=root ansible_password=$ROOT_PASSWORD ansible_python_interpreter=/usr/bin/python3" >> "$INVENTORY_FILE"
+echo "Test connection with:"
+echo "Then run your playbooks as usual."
+echo "ansible -i $INVENTORY_FILE docker_nodes -m ping"
+echo "✅ Container '$CONTAINER_NAME' is ready for Ansible!"
+echo "📌 Ansible inventory updated: $INVENTORY_FILE"
+echo "📌 Container IP: $CONTAINER_IP"
+echo "📌 Root password: $ROOT_PASSWORD"
+echo "🔹 Creating Docker container for Ansible..."
+echo "🔹 Installing SSH and Python inside the container..."
+fi
+if [ ! -f "$INVENTORY_FILE" ]; then
+mkdir -p "$ANSIBLE_DIR"
+sed -i "/$CONTAINER_IP/d" "$INVENTORY_FILE"
+kartik@LAPTOP-NPJFOSTG:~$ sort docker.sh-docker.shrdocker.sh docker.sh
+sed -i "/$CONTAINER_IP/d" "$INVENTORY_FILE"
+mkdir -p "$ANSIBLE_DIR"
+if [ ! -f "$INVENTORY_FILE" ]; then
+fi
+echo "🔹 Installing SSH and Python inside the container..."
+echo "🔹 Creating Docker container for Ansible..."
+echo "📌 Root password: $ROOT_PASSWORD"
+echo "📌 Container IP: $CONTAINER_IP"
+echo "📌 Ansible inventory updated: $INVENTORY_FILE"
+echo "✅ Container '$CONTAINER_NAME' is ready for Ansible!"
+echo "ansible -i $INVENTORY_FILE docker_nodes -m ping"
+echo "Then run your playbooks as usual."
+echo "Test connection with:"
+echo "$CONTAINER_IP ansible_user=root ansible_password=$ROOT_PASSWORD ansible_python_interpreter=/usr/bin/python3" >> "$INVENTORY_FILE"
+echo ""
+echo ""
+echo ""
+docker run -dit --name $CONTAINER_NAME --hostname ansible-node $IMAGE_NAME
+docker pull $IMAGE_NAME
+docker exec -it $CONTAINER_NAME bash -c "
+ROOT_PASSWORD="kartik123"  # Change if needed
+INVENTORY_FILE="$ANSIBLE_DIR/hosts.ini"
+IMAGE_NAME="ubuntu:20.04"
+CONTAINER_NAME="ansible_node"
+CONTAINER_IP=$(docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $CONTAINER_NAME)
+ANSIBLE_DIR="$HOME/ansible-docker"  # Change if your hosts.ini is elsewhere
+#!/bin/bash
+# ===== Configuration =====
+# 9️⃣ Show final info
+# 8️⃣ Add container to Ansible inventory automatically
+# 7️⃣ Remove old entry if exists
+# 6️⃣ Get container IP
+# 5️⃣ Install SSH, sudo, Python inside container
+# 4️⃣ Run container in background
+# 3️⃣ Pull Ubuntu image if not already present
+# 2️⃣ Ensure hosts.ini exists
+# 1️⃣ Ensure Ansible project directory exists
+"
+  service ssh start
+  echo 'root:$ROOT_PASSWORD' | chpasswd &&
+  apt update &&
+  apt install -y openssh-server sudo python3 &&
+    echo "[docker_nodes]" > "$INVENTORY_FILE"
+
+
+
+
+
+
+
+
+
+
+
+
+kartik@LAPTOP-NPJFOSTG:~$ uniq docker.sh
+#!/bin/bash
+
+# ===== Configuration =====
+CONTAINER_NAME="ansible_node"
+IMAGE_NAME="ubuntu:20.04"
+ROOT_PASSWORD="kartik123"  # Change if needed
+ANSIBLE_DIR="$HOME/ansible-docker"  # Change if your hosts.ini is elsewhere
+INVENTORY_FILE="$ANSIBLE_DIR/hosts.ini"
+
+echo "🔹 Creating Docker container for Ansible..."
+
+# 1️⃣ Ensure Ansible project directory exists
+mkdir -p "$ANSIBLE_DIR"
+
+# 2️⃣ Ensure hosts.ini exists
+if [ ! -f "$INVENTORY_FILE" ]; then
+    echo "[docker_nodes]" > "$INVENTORY_FILE"
+fi
+
+# 3️⃣ Pull Ubuntu image if not already present
+docker pull $IMAGE_NAME
+
+# 4️⃣ Run container in background
+docker run -dit --name $CONTAINER_NAME --hostname ansible-node $IMAGE_NAME
+
+# 5️⃣ Install SSH, sudo, Python inside container
+echo "🔹 Installing SSH and Python inside the container..."
+docker exec -it $CONTAINER_NAME bash -c "
+  apt update &&
+  apt install -y openssh-server sudo python3 &&
+  echo 'root:$ROOT_PASSWORD' | chpasswd &&
+  service ssh start
+"
+
+# 6️⃣ Get container IP
+CONTAINER_IP=$(docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $CONTAINER_NAME)
+
+# 7️⃣ Remove old entry if exists
+sed -i "/$CONTAINER_IP/d" "$INVENTORY_FILE"
+
+# 8️⃣ Add container to Ansible inventory automatically
+echo "$CONTAINER_IP ansible_user=root ansible_password=$ROOT_PASSWORD ansible_python_interpreter=/usr/bin/python3" >> "$INVENTORY_FILE"
+
+# 9️⃣ Show final info
+echo ""
+echo "✅ Container '$CONTAINER_NAME' is ready for Ansible!"
+echo "📌 Container IP: $CONTAINER_IP"
+echo "📌 Root password: $ROOT_PASSWORD"
+echo "📌 Ansible inventory updated: $INVENTORY_FILE"
+echo ""
+echo "Test connection with:"
+echo "ansible -i $INVENTORY_FILE docker_nodes -m ping"
+echo ""
+echo "Then run your playbooks as usual."
+
+kartik@LAPTOP-NPJFOSTG:~$ uniq docker.sh              w  c docker.sh
+  55  213 1774 docker.sh
+kartik@LAPTOP-NPJFOSTG:~$ wc -l docl.  ker.sh
+55 docker.sh
+kartik@LAPTOP-NPJFOSTG:~$ awk print         ""  '' docker.sh{' docker.sh}' docker.shD' docker.sh' docker.sh p}' docker.shr}' docker.shi}' docker.shn}' docker.sht}' docker.sh }' docker.sh$}' docker.sh1}' docker.sh }' docker.sh
+#!/bin/bash
+
+#
+CONTAINER_NAME="ansible_node"
+IMAGE_NAME="ubuntu:20.04"
+ROOT_PASSWORD="kartik123"
+ANSIBLE_DIR="$HOME/ansible-docker"
+INVENTORY_FILE="$ANSIBLE_DIR/hosts.ini"
+
+echo
+
+#
+mkdir
+
+#
+if
+echo
+fi
+
+#
+docker
+
+#
+docker
+
+#
+echo
+docker
+apt
+apt
+echo
+service
+"
+
+#
+CONTAINER_IP=$(docker
+
+#
+sed
+
+#
+echo
+
+#
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+echo
+
+kartik@LAPTOP-NPJFOSTG:~$ s ls | head -n 5
+1
+Devops_tools_practice
+Dockerfile
+My-Repository
+Project3
+kartik@LAPTOP-NPJFOSTG:~$ cat D P   Dockerfile 
+FROM jenkins/jenkins:lts
+
+USER root
+
+RUN apt-get update && \
+    apt-get install -y docker.io
+
+USER jenkins
+
+kartik@LAPTOP-NPJFOSTG:~$ sed 's/root/kartik/g '  ' d Dockerfile 
+FROM jenkins/jenkins:lts
+
+USER kartik
+
+RUN apt-get update && \
+    apt-get install -y docker.io
+
+USER jenkins
+
+kartik@LAPTOP-NPJFOSTG:~$ exit 
+exit
+
+Script done on 2026-07-20 14:53:03+00:00 [COMMAND_EXIT_CODE="0"]

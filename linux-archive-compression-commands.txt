@@ -1,0 +1,63 @@
+Script started on 2026-07-20 15:22:35+00:00 [TERM="dumb" TTY="/dev/pts/0" COLUMNS="148" LINES="46"]
+kartik@LAPTOP-NPJFOSTG:~$ mkdir archive-file   o ile1
+kartik@LAPTOP-NPJFOSTG:~$ c d  d mkd   archive-file1/
+kartik@LAPTOP-NPJFOSTG:~/archive-file1$ tar -cvf archive/ .tar archive-file1
+tar: archive-file1: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+kartik@LAPTOP-NPJFOSTG:~/archive-file1$ cd ..
+kartik@LAPTOP-NPJFOSTG:~$ cd ..tar -cvf archive.tar archive-file1
+archive-file1/
+archive-file1/archive.tar
+kartik@LAPTOP-NPJFOSTG:~$ tar -xvf archive.tar
+archive-file1/
+archive-file1/archive.tar
+kartik@LAPTOP-NPJFOSTG:~$ tar -xvf archive.tarvf archive.tar tvf archive.tar
+drwxr-xr-x kartik/kartik     0 2026-07-20 15:23 archive-file1/
+-rw-r--r-- kartik/kartik 10240 2026-07-20 15:23 archive-file1/archive.tar
+kartik@LAPTOP-NPJFOSTG:~$ zip -r archive-file1        -i zi p  p arh chive-file1/ 
+  adding: archive-file1/ (stored 0%)
+  adding: archive-file1/archive.tar (deflated 100%)
+kartik@LAPTOP-NPJFOSTG:~$ uzip -r archive-zip archive-file1             uzip -r archive-zip nzip -r archive-zip 
+UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
+
+Usage: unzip [-Z] [-opts[modifiers]] file[.zip] [list] [-x xlist] [-d exdir]
+  Default action is to extract files in list, except those in xlist, to exdir;
+  file[.zip] may be a wildcard.  -Z => ZipInfo mode ("unzip -Z" for usage).
+
+  -p  extract files to pipe, no messages     -l  list files (short format)
+  -f  freshen existing files, create none    -t  test compressed archive data
+  -u  update files, create if necessary      -z  display archive comment only
+  -v  list verbosely/show version info       -T  timestamp archive to latest
+  -x  exclude files that follow (in xlist)   -d  extract files into exdir
+modifiers:
+  -n  never overwrite existing files         -q  quiet mode (-qq => quieter)
+  -o  overwrite files WITHOUT prompting      -a  auto-convert any text files
+  -j  junk paths (do not make directories)   -aa treat ALL files as text
+  -U  use escapes for all non-ASCII Unicode  -UU ignore any Unicode fields
+  -C  match filenames case-insensitively     -L  make (some) names lowercase
+  -X  restore UID/GID info                   -V  retain VMS version numbers
+  -K  keep setuid/setgid/tacky permissions   -M  pipe through "more" pager
+  -O CHARSET  specify a character encoding for DOS, Windows and OS/2 archives
+  -I CHARSET  specify a character encoding for UNIX and other archives
+
+See "unzip -hh" or unzip.txt for more help.  Examples:
+  unzip data1 -x joe   => extract all files except joe from zipfile data1.zip
+  unzip -p foo | more  => send contents of foo.zip via pipe into program more
+  unzip -fo foo ReadMe => quietly replace existing ReadMe if archive file newer
+kartik@LAPTOP-NPJFOSTG:~$ unzip -r archive-zip  archive-zip   archive-zip  archive-zip  
+Archive:  archive-zip.zip
+replace archive-file1/archive.tar? [y]es, [n]o, [A]ll, [N]one, [r]ename: r
+new name: archive-zip2
+  inflating: archive-zip2            
+kartik@LAPTOP-NPJFOSTG:~$ ls -lh archive.tar archive.zip
+ls: cannot access 'archive.zip': No such file or directory
+-rw-r--r-- 1 kartik kartik 20K Jul 20 15:23 archive.tar
+kartik@LAPTOP-NPJFOSTG:~$ ls -lh archive.tar archive.zip                       | grep *tar
+-rw-r--r--  1 kartik kartik  20K Jul 20 15:23 archive.tar
+kartik@LAPTOP-NPJFOSTG:~$ ls -lh | grep *tarkartik@LAPTOP-NPJFOSTG:~$ ls -lh | grep *takartik@LAPTOP-NPJFOSTG:~$ ls -lh | grep *tar    zip
+-rw-r--r--  1 kartik kartik  383 Jul 20 15:24 archive-zip.zip
+-rw-r--r--  1 kartik kartik  10K Jul 20 15:23 archive-zip2
+kartik@LAPTOP-NPJFOSTG:~$ exit
+exit
+
+Script done on 2026-07-20 15:25:37+00:00 [COMMAND_EXIT_CODE="0"]

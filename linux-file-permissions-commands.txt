@@ -1,0 +1,31 @@
+Script started on 2026-07-20 14:54:29+00:00 [TERM="dumb" TTY="/dev/pts/2" COLUMNS="72" LINES="45"]
+kartik@LAPTOP-NPJFOSTG:~$ chmor   d 777     rwx+u doc   Dockerfile 
+chmod: invalid mode: ‘rwx+u’
+Try 'chmod --help' for more information.
+kartik@LAPTOP-NPJFOSTG:~$ ls |   -l | grep Dockerfile
+-rw-r--r--  1 kartik kartik     109 Feb 13 11:13 Dockerfile
+kartik@LAPTOP-NPJFOSTG:~$ ls -l | grep Dockerfilechmod rwx+u Dockerfile kartik@LAPTOP-NPJFOSTG:~$ chmod rwx+kartik@LAPTOP-NPJFOSTG:~$ chmod rwx+u Dockerfile  o Dockerfile 
+chmod: invalid mode: ‘rwx+o’
+Try 'chmod --help' for more information.
+kartik@LAPTOP-NPJFOSTG:~$ chmod rwx+o Dockerfile  Dockerfile  u Dockerfile g Dockerfile o Dockerfile 
+chmod: invalid mode: ‘rwx+ugo’
+Try 'chmod --help' for more information.
+kartik@LAPTOP-NPJFOSTG:~$ chmod rwx+ugo Dockerfile                    ugo+rwx Dockerfile 
+kartik@LAPTOP-NPJFOSTG:~$ chmod ugo+rwx Dockerfile rwx+ugo Dockerfile o Dockerfile   ls -l | grep Dockerfile
+-rwxrwxrwx  1 kartik kartik     109 Feb 13 11:13 Dockerfile
+kartik@LAPTOP-NPJFOSTG:~$ ls -l | grep Dockerfilechmod ugo+rwx Dockerfile kartik@LAPTOP-NPJFOSTG:~$ chmod ugo+kartik@LAPTOP-NPJFOSTG:~$ chmod ugo+rkartik@LAPTOP-NPJFOSTG:~$ chmod ugo+rwx Dockerfile  kartik@LAPTOP-NPJFOSTG:~$ chmod ugo+rx Dockerfile  go+r Dockerfile  
+kartik@LAPTOP-NPJFOSTG:~$ chmod go+r Dockerfile ls -l | grep Dockerfile
+-rwxrwxrwx  1 kartik kartik     109 Feb 13 11:13 Dockerfile
+kartik@LAPTOP-NPJFOSTG:~$ ls -l | grep Dockerfilechmod go+r Dockerfile  +r Dockerfile  +r Dockerfile  r+r Dockerfile w+r Dockerfile +r Dockerfile  w+r Dockerfile kartik@LAPTOP-NPJFOSTG:~$ chmod rw++r Dockerfile  +r Dockerfile  w+r Dockerfile x+r Dockerfile +r Dockerfile  x+r Dockerfile kartik@LAPTOP-NPJFOSTG:~$ chmod wx+r Dockerfile  -r Dockerfile kartik@LAPTOP-NPJFOSTG:~$ chmod wx-r Dockerfile   Dockerfile   Dockerfile   Dockerfile  g Dockerfile o Dockerfile - Dockerfile w Dockerfile x Dockerfile 
+kartik@LAPTOP-NPJFOSTG:~$ chmod go-wx Dockerfile ls -l | grep Dockerfile
+-rwxr--r--  1 kartik kartik     109 Feb 13 11:13 Dockerfile
+kartik@LAPTOP-NPJFOSTG:~$ sudo chown kartik" :root Dockerfile 
+kartik@LAPTOP-NPJFOSTG:~$ sudo chown kartik:root Dockerfile kartik@LAPTOP-NPJFOSTG:~$ ls -l | grep Dockerfile           
+-rwxr--r--  1 kartik root       109 Feb 13 11:13 Dockerfile
+kartik@LAPTOP-NPJFOSTG:~$ ls -l | grep Dockerfilesudo chown kartik:root Dockerfile kartik@LAPTOP-NPJFOSTG:~$ sudo chown kartikartik@LAPTOP-NPJFOSTG:~$ sudo chown kartik:root Dockerfile  :root Dockerfile  :root Dockerfile  :root Dockerfile  :root Dockerfile  :root Dockerfile  r:root Dockerfile o:root Dockerfile o:root Dockerfile t:root Dockerfile 
+kartik@LAPTOP-NPJFOSTG:~$ sudo chown root:root Dockerfile kartik@LAPTOP-NPJFOSTG:~$ ls -l | grep Dockerfile         
+-rwxr--r--  1 root   root       109 Feb 13 11:13 Dockerfile
+kartik@LAPTOP-NPJFOSTG:~$ exit
+exit
+
+Script done on 2026-07-20 14:58:54+00:00 [COMMAND_EXIT_CODE="0"]

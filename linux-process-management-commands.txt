@@ -1,0 +1,164 @@
+Script started on 2026-07-20 15:15:52+00:00 [TERM="dumb" TTY="/dev/pts/0" COLUMNS="72" LINES="45"]
+kartik@LAPTOP-NPJFOSTG:~$ ps | e head -n 10
+    PID TTY          TIME CMD
+    928 pts/2    00:00:00 bash
+    938 pts/2    00:00:00 ps
+    939 pts/2    00:00:00 head
+kartik@LAPTOP-NPJFOSTG:~$ ps | head -n 10            
+    PID TTY          TIME CMD
+    928 pts/2    00:00:00 bash
+    940 pts/2    00:00:00 ps
+kartik@LAPTOP-NPJFOSTG:~$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 15:10 ?        00:00:00 /sbin/init
+root           2       1  0 15:10 ?        00:00:00 /init
+root           6       2  0 15:10 ?        00:00:00 plan9 --control-sock
+root          51       1  0 15:10 ?        00:00:00 /usr/lib/systemd/sys
+root          93       1  0 15:10 ?        00:00:00 /usr/lib/systemd/sys
+root         115       1  0 15:10 ?        00:00:00 snapfuse /var/lib/sn
+root         117       1  0 15:10 ?        00:00:00 snapfuse /var/lib/sn
+root         122       1  0 15:10 ?        00:00:00 snapfuse /var/lib/sn
+root         125       1  0 15:10 ?        00:00:00 snapfuse /var/lib/sn
+root         130       1  0 15:10 ?        00:00:02 snapfuse /var/lib/sn
+root         133       1  0 15:10 ?        00:00:00 snapfuse /var/lib/sn
+root         137       1  0 15:10 ?        00:00:00 snapfuse /var/lib/sn
+root         143       1  0 15:10 ?        00:00:00 snapfuse /var/lib/sn
+root         146       1  0 15:10 ?        00:00:00 snapfuse /var/lib/sn
+systemd+     205       1  0 15:10 ?        00:00:00 /usr/lib/systemd/sys
+systemd+     207       1  0 15:10 ?        00:00:00 /usr/lib/systemd/sys
+root         216       1  0 15:10 ?        00:00:00 /usr/sbin/cron -f -P
+message+     217       1  0 15:10 ?        00:00:00 @dbus-daemon --syste
+root         236       1  0 15:10 ?        00:00:00 /snap/snapd/current/
+root         238       1  0 15:10 ?        00:00:00 /usr/lib/systemd/sys
+root         242       1  0 15:10 ?        00:00:00 /usr/libexec/wsl-pro
+root         247       1  0 15:10 hvc0     00:00:00 /sbin/agetty -o -p -
+syslog       251       1  0 15:10 ?        00:00:00 /usr/sbin/rsyslogd -
+root         254       1  0 15:10 tty1     00:00:00 /sbin/agetty -o -p -
+root         259       1  0 15:10 ?        00:00:00 /usr/bin/containerd
+root         282       1  0 15:10 ?        00:00:00 /usr/bin/python3 /us
+root         294       1  0 15:10 ?        00:00:00 /usr/sbin/apache2 -k
+www-data     296     294  0 15:10 ?        00:00:00 /usr/sbin/apache2 -k
+www-data     297     294  0 15:10 ?        00:00:00 /usr/sbin/apache2 -k
+root         372       1  0 15:10 ?        00:00:00 /usr/bin/dockerd -H 
+root         720       2  0 15:10 ?        00:00:00 /init
+root         721     720  0 15:10 ?        00:00:00 /init
+kartik       722     721  0 15:10 pts/0    00:00:00 -bash
+root         723       2  0 15:10 pts/1    00:00:00 /bin/login -f
+kartik       774       1  0 15:10 ?        00:00:00 /usr/lib/systemd/sys
+kartik       775     774  0 15:10 ?        00:00:00 (sd-pam)
+kartik       786     723  0 15:10 pts/1    00:00:00 -bash
+kartik       927     722  0 15:15 pts/0    00:00:00 script -q linux-proc
+kartik       928     927  0 15:15 pts/2    00:00:00 bash -i
+kartik       941     928  0 15:16 pts/2    00:00:00 ps -ef
+kartik@LAPTOP-NPJFOSTG:~$ ps u au
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         247  0.0  0.0   3160  1232 hvc0     Ss+  15:10   0:00 /sbin
+root         254  0.0  0.0   3116  1148 tty1     Ss+  15:10   0:00 /sbin
+kartik       722  0.0  0.1   6204  5492 pts/0    Ss   15:10   0:00 -bash
+root         723  0.0  0.1   6692  4668 pts/1    Ss   15:10   0:00 /bin/
+kartik       786  0.0  0.1   6072  5228 pts/1    S+   15:10   0:00 -bash
+kartik       927  0.0  0.0   3144  1236 pts/0    S+   15:15   0:00 scrip
+kartik       928  0.0  0.1   6068  5120 pts/2    Ss   15:15   0:00 bash 
+kartik       942  0.0  0.1   8280  4160 pts/2    R+   15:16   0:00 ps au
+kartik@LAPTOP-NPJFOSTG:~$ x ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.3  21728 12940 ?        Ss   15:10   0:00 /sbin
+root           2  0.0  0.0   2776  1924 ?        Sl   15:10   0:00 /init
+root           6  0.0  0.0   2776   132 ?        Sl   15:10   0:00 plan9
+root          51  0.0  0.4  50444 16424 ?        S<s  15:10   0:00 /usr/
+root          93  0.0  0.1  24532  6604 ?        Ss   15:10   0:00 /usr/
+root         115  0.0  0.0 152936   168 ?        Ssl  15:10   0:00 snapf
+root         117  0.0  0.0 153068  2664 ?        Ssl  15:10   0:00 snapf
+root         122  0.0  0.0 152936   212 ?        Ssl  15:10   0:00 snapf
+root         125  0.0  0.0 153068   700 ?        Ssl  15:10   0:00 snapf
+root         130  0.6  0.4 526756 18428 ?        Ssl  15:10   0:02 snapf
+root         133  0.0  0.0 152936   216 ?        Ssl  15:10   0:00 snapf
+root         137  0.0  0.0 153068  2672 ?        Ssl  15:10   0:00 snapf
+root         143  0.0  0.0 153068  2212 ?        Ssl  15:10   0:00 snapf
+root         146  0.0  0.0 152936   212 ?        Ssl  15:10   0:00 snapf
+systemd+     205  0.0  0.2  21336 11832 ?        Ss   15:10   0:00 /usr/
+systemd+     207  0.0  0.1  91028  6540 ?        Ssl  15:10   0:00 /usr/
+root         216  0.0  0.0   4236  2692 ?        Ss   15:10   0:00 /usr/
+message+     217  0.0  0.1   9628  5224 ?        Ss   15:10   0:00 @dbus
+root         236  0.1  1.0 1998364 43012 ?       Ssl  15:10   0:00 /snap
+root         238  0.0  0.2  17984  8108 ?        Ss   15:10   0:00 /usr/
+root         242  0.0  0.4 1756096 18216 ?       Ssl  15:10   0:00 /usr/
+root         247  0.0  0.0   3160  1232 hvc0     Ss+  15:10   0:00 /sbin
+syslog       251  0.0  0.1 222508  5376 ?        Ssl  15:10   0:00 /usr/
+root         254  0.0  0.0   3116  1148 tty1     Ss+  15:10   0:00 /sbin
+root         259  0.0  1.3 1951236 54496 ?       Ssl  15:10   0:00 /usr/
+root         282  0.0  0.5 107028 22404 ?        Ssl  15:10   0:00 /usr/
+root         294  0.0  0.1   6824  4972 ?        Ss   15:10   0:00 /usr/
+www-data     296  0.0  0.2 1999332 11464 ?       Sl   15:10   0:00 /usr/
+www-data     297  0.0  0.2 1999332 9420 ?        Sl   15:10   0:00 /usr/
+root         372  0.0  2.0 1994784 80696 ?       Ssl  15:10   0:00 /usr/
+root         720  0.0  0.0   2776   208 ?        Ss   15:10   0:00 /init
+root         721  0.0  0.0   2776   208 ?        S    15:10   0:00 /init
+kartik       722  0.0  0.1   6204  5492 pts/0    Ss   15:10   0:00 -bash
+root         723  0.0  0.1   6692  4668 pts/1    Ss   15:10   0:00 /bin/
+kartik       774  0.0  0.2  20356 11368 ?        Ss   15:10   0:00 /usr/
+kartik       775  0.0  0.0  21156  1728 ?        S    15:10   0:00 (sd-p
+kartik       786  0.0  0.1   6072  5228 pts/1    S+   15:10   0:00 -bash
+kartik       927  0.0  0.0   3144  1236 pts/0    S+   15:15   0:00 scrip
+kartik       928  0.0  0.1   6068  5120 pts/2    Ss   15:15   0:00 bash 
+kartik       943  0.0  0.1   8280  4248 pts/2    R+   15:16   0:00 ps au
+kartik@LAPTOP-NPJFOSTG:~$ top 
+top - 15:16:19 up 5 min,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  42 total,   1 running,  41 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,
+MiB Mem :   3920.9 total,   2934.6 free,    684.3 used,    517.0 buff/c
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   3236.6 avail 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ 
+      1 root      20   0   21728  12940   9548 S   0.0   0.3   0:00.31 
+      2 root      20   0    2776   1924   1796 S   0.0   0.0   0:00.00 
+      6 root      20   0    2776    132    132 S   0.0   0.0   0:00.00 
+     51 root      19  -1   50444  16424  15292 S   0.0   0.4   0:00.08 
+     93 root      20   0   24532   6604   4892 S   0.0   0.2   0:00.11 
+    115 root      20   0  152936    168      0 S   0.0   0.0   0:00.00 
+    117 root      20   0  153068   2664    380 S   0.0   0.1   0:00.00 
+    122 root      20   0  152936    212     48 S   0.0   0.0   0:00.00 
+    125 root      20   0  153068    700    444 S   0.0   0.0   0:00.00 
+    130 root      20   0  526756  18428    548 S   0.0   0.5   0:02.09 
+    133 root      20   0  152936    216     52 S   0.0   0.0   0:00.00 
+    137 root      20   0  153068   2672    380 S   0.0   0.1   0:00.00 
+    143 root      20   0  153068   2212      8 S   0.0   0.1   0:00.00 
+    146 root      20   0  152936    212     48 S   0.0   0.0   0:00.00 
+    205 systemd+  20   0   21336  11832   9772 S   0.0   0.3   0:00.05 
+    207 systemd+  20   0   91028   6540   5692 S   0.0   0.2   0:00.03 
+    216 root      20   0    4236   2692   2460 S   0.0   0.1   0:00.00 
+    217 message+  20   0    9628   5224   4536 S   0.0   0.1   0:00.02 
+    236 root      20   0 1998364  43012  23912 S   0.0   1.1   0:00.33 
+    238 root      20   0   17984   8108   7096 S   0.0   0.2   0:00.04 
+    242 root      20   0 1756096  18216   9604 S   0.0   0.5   0:00.05 
+    247 root      20   0    3160   1232   1144 S   0.0   0.0   0:00.00 
+    251 syslog    20   0  222508   5376   4528 S   0.0   0.1   0:00.03 
+    254 root      20   0    3116   1148   1064 S   0.0   0.0   0:00.00 
+    259 root      20   0 1951236  54496  32040 S   0.0   1.4   0:00.33 
+    282 root      20   0  107028  22404  13072 S   0.0   0.6   0:00.07 
+    294 root      20   0    6824   4972   3652 S   0.0   0.1   0:00.01 
+    296 www-data  20   0 1999332  11464   3720 S   0.0   0.3   0:00.00 
+    297 www-data  20   0 1999332   9420   3720 S   0.0   0.2   0:00.00 
+    372 root      20   0 1994784  80696  53300 S   0.0   2.0   0:00.28 
+    720 root      20   0    2776    208     80 S   0.0   0.0   0:00.00 
+    721 root      20   0    2776    208     80 S   0.0   0.0   0:00.05 
+    722 kartik    20   0    6204   5492   3612 S   0.0   0.1   0:00.02 
+    723 root      20   0    6692   4668   3884 S   0.0   0.1   0:00.00 
+    774 kartik    20   0   20356  11368   9228 S   0.0   0.3   0:00.04 
+    775 kartik    20   0   21156   1728      0 S   0.0   0.0   0:00.00 
+    786 kartik    20   0    6072   5228   3624 S   0.0   0.1   0:00.01 
+    927 kartik    20   0    3144   1236   1144 S   0.0   0.0   0:00.00 
+kartik@LAPTOP-NPJFOSTG:~$ kill                                                                                                                                                         kartik@LAPTOP-NPJFOSTG:~$ jobs
+kartik@LAPTOP-NPJFOSTG:~$ jobstop ps aux | grep nginx
+kartik       950  0.0  0.0   4088  1892 pts/2    S+   15:16   0:00 grep --color=auto nginx
+kartik@LAPTOP-NPJFOSTG:~$ kill 05  950
+bash: kill: (950) - No such process
+kartik@LAPTOP-NPJFOSTG:~$ kill 950ps aux | grep nginx | grep nginx  | grep nginx  | grep nginx - | grep nginxe | grep nginxf | grep nginx
+kartik       959     928  0 15:17 pts/2    00:00:00 grep --color=auto nginx
+kartik@LAPTOP-NPJFOSTG:~$ ps -ef | grep nginxkartik@LAPTOP-NPJFOSTG:~$ ps -ef | grep nginx i -ef | grep nginxd -ef | grep nginx
+Command 'pid' not found, but there are 20 similar ones.
+kartik@LAPTOP-NPJFOSTG:~$ kill 4088
+bash: kill: (4088) - No such process
+kartik@LAPTOP-NPJFOSTG:~$ kill 4088    927
+
+Script done on 2026-07-20 15:18:16+00:00 [COMMAND_EXIT_CODE="0"]
