@@ -1,5 +1,78 @@
-Script started on 2026-07-20 14:05:17+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="148" LINES="46"]
-[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ exit
+Script started on 2026-07-20 14:24:15+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="148" LINES="46"]
+[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ pwd
+[?2004l/home/kartik
+[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ ls
+[?2004l1                      ansiblefordocker.sh                          docker.sh      jf                  linux-commands.txt             [0m[01;34msnap[0m
+[01;34mDevops_tools_practice[0m  [01;34martifactory[0m                                  [01;34mfile1[0m          [01;34mk8stws[0m              linux-navigation-commands.txt  [01;34mstreakflow[0m
+Dockerfile             [01;34mdemo[0m                                         file_10        kartik              [01;34mlinux-practice[0m                 [01;32mvishal[0m
+[01;34mMy-Repository[0m          [01;34mdevops-project-09-Jenkins-CICD-with-ECS-ECR[0m  [01;34mhabit-tracker[0m  [01;34mkeys[0m                naruto.pem
+[01;34mProject3[0m               [01;34mdocker[0m                                       hello_world    [01;34mkubernetes[0m          [01;34mplaybooks[0m
+[01;34mansible-docker[0m         docker-compose.yml                           [01;34mjenkins_home[0m   [01;34mlinux-cli-practice[0m  [01;31msession-manager-plugin.deb[0m
+[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ ls a[K-a
+[?2004l[0m[01;34m.[0m              [01;34m.landscape[0m                 [01;34m.vscode-server[0m                               docker-compose.yml  linux-commands.txt
+[01;34m..[0m             .lesshst                   .wget-hsts                                   docker.sh           linux-navigation-commands.txt
+[01;34m.ansible[0m       [00;90m.linux-commands.txt.swp[0m    1                                            [01;34mfile1[0m               [01;34mlinux-practice[0m
+[01;36m.aws[0m           [01;34m.local[0m                     [01;34mDevops_tools_practice[0m                        file_10             naruto.pem
+[01;36m.azure[0m         [01;34m.minikube[0m                  Dockerfile                                   [01;34mhabit-tracker[0m       [01;34mplaybooks[0m
+.bash_history  .motd_shown                [01;34mMy-Repository[0m                                hello_world         [01;31msession-manager-plugin.deb[0m
+.bash_logout   .profile                   [01;34mProject3[0m                                     [01;34mjenkins_home[0m        [01;34msnap[0m
+.bashrc        .selected_editor           [01;34mansible-docker[0m                               jf                  [01;34mstreakflow[0m
+[01;34m.cache[0m         [01;34m.ssh[0m                       ansiblefordocker.sh                          [01;34mk8stws[0m              [01;32mvishal[0m
+[01;34m.config[0m        .sudo_as_admin_successful  [01;34martifactory[0m                                  kartik
+[01;34m.docker[0m        [01;34m.terraform.d[0m               [01;34mdemo[0m                                         [01;34mkeys[0m
+.gitconfig     [01;34m.vim[0m                       [01;34mdevops-project-09-Jenkins-CICD-with-ECS-ECR[0m  [01;34mkubernetes[0m
+[01;34m.kube[0m          .viminfo                   [01;34mdocker[0m                                       [01;34mlinux-cli-practice[0m
+[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ cd ~
+[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ mkdir folder1-folder1pfolder1 folder1
+[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ ls | frep[K[K[K[Kgrep folder1/[K
+[?2004l[01;31m[Kfolder1[m[K
+[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ rmdir folder1/
+[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ rmdir folder1/ls | grep folder1
+[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ clea[K[K[K[Kpwd
+[?2004l/home/kartik
+[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ tree -L 1
+[?2004l[01;34m.[0m
+├── 1
+├── [01;34mDevops_tools_practice[0m
+├── Dockerfile
+├── [01;34mMy-Repository[0m
+├── [01;34mProject3[0m
+├── [01;34mansible-docker[0m
+├── ansiblefordocker.sh
+├── [01;34martifactory[0m
+├── [01;34mdemo[0m
+├── [01;34mdevops-project-09-Jenkins-CICD-with-ECS-ECR[0m
+├── [01;34mdocker[0m
+├── docker-compose.yml
+├── docker.sh
+├── [01;34mfile1[0m
+├── file_10
+├── [01;34mhabit-tracker[0m
+├── hello_world
+├── [01;34mjenkins_home[0m
+├── jf
+├── [01;34mk8stws[0m
+├── kartik
+├── [01;34mkeys[0m
+├── [01;34mkubernetes[0m
+├── [01;34mlinux-cli-practice[0m
+├── linux-commands.txt
+├── linux-navigation-commands.txt
+├── [01;34mlinux-practice[0m
+├── naruto.pem
+├── [01;34mplaybooks[0m
+├── [01;31msession-manager-plugin.deb[0m
+├── [01;34msnap[0m
+├── [01;34mstreakflow[0m
+└── [01;32mvishal[0m
+
+20 directories, 14 files
+[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ c [Kat [K[K[Kd m[KMY[Ky-Repository/
+[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~/My-Repository[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~/My-Repository[00m$ ls
+[?2004lREADME.md  index.html
+[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~/My-Repository[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~/My-Repository[00m$ cd ..
+[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ exec bash
+[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ exit
 [?2004lexit
 
-Script done on 2026-07-20 14:05:21+00:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2026-07-20 14:26:37+00:00 [COMMAND_EXIT_CODE="0"]
