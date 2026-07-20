@@ -1,78 +1,260 @@
-Script started on 2026-07-20 14:24:15+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="148" LINES="46"]
-[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ pwd
-[?2004l/home/kartik
-[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ ls
-[?2004l1                      ansiblefordocker.sh                          docker.sh      jf                  linux-commands.txt             [0m[01;34msnap[0m
-[01;34mDevops_tools_practice[0m  [01;34martifactory[0m                                  [01;34mfile1[0m          [01;34mk8stws[0m              linux-navigation-commands.txt  [01;34mstreakflow[0m
-Dockerfile             [01;34mdemo[0m                                         file_10        kartik              [01;34mlinux-practice[0m                 [01;32mvishal[0m
-[01;34mMy-Repository[0m          [01;34mdevops-project-09-Jenkins-CICD-with-ECS-ECR[0m  [01;34mhabit-tracker[0m  [01;34mkeys[0m                naruto.pem
-[01;34mProject3[0m               [01;34mdocker[0m                                       hello_world    [01;34mkubernetes[0m          [01;34mplaybooks[0m
-[01;34mansible-docker[0m         docker-compose.yml                           [01;34mjenkins_home[0m   [01;34mlinux-cli-practice[0m  [01;31msession-manager-plugin.deb[0m
-[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ ls a[K-a
-[?2004l[0m[01;34m.[0m              [01;34m.landscape[0m                 [01;34m.vscode-server[0m                               docker-compose.yml  linux-commands.txt
-[01;34m..[0m             .lesshst                   .wget-hsts                                   docker.sh           linux-navigation-commands.txt
-[01;34m.ansible[0m       [00;90m.linux-commands.txt.swp[0m    1                                            [01;34mfile1[0m               [01;34mlinux-practice[0m
-[01;36m.aws[0m           [01;34m.local[0m                     [01;34mDevops_tools_practice[0m                        file_10             naruto.pem
-[01;36m.azure[0m         [01;34m.minikube[0m                  Dockerfile                                   [01;34mhabit-tracker[0m       [01;34mplaybooks[0m
-.bash_history  .motd_shown                [01;34mMy-Repository[0m                                hello_world         [01;31msession-manager-plugin.deb[0m
-.bash_logout   .profile                   [01;34mProject3[0m                                     [01;34mjenkins_home[0m        [01;34msnap[0m
-.bashrc        .selected_editor           [01;34mansible-docker[0m                               jf                  [01;34mstreakflow[0m
-[01;34m.cache[0m         [01;34m.ssh[0m                       ansiblefordocker.sh                          [01;34mk8stws[0m              [01;32mvishal[0m
-[01;34m.config[0m        .sudo_as_admin_successful  [01;34martifactory[0m                                  kartik
-[01;34m.docker[0m        [01;34m.terraform.d[0m               [01;34mdemo[0m                                         [01;34mkeys[0m
-.gitconfig     [01;34m.vim[0m                       [01;34mdevops-project-09-Jenkins-CICD-with-ECS-ECR[0m  [01;34mkubernetes[0m
-[01;34m.kube[0m          .viminfo                   [01;34mdocker[0m                                       [01;34mlinux-cli-practice[0m
-[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ cd ~
-[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ mkdir folder1-folder1pfolder1 folder1
-[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ ls | frep[K[K[K[Kgrep folder1/[K
-[?2004l[01;31m[Kfolder1[m[K
-[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ rmdir folder1/
-[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ rmdir folder1/ls | grep folder1
-[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ clea[K[K[K[Kpwd
-[?2004l/home/kartik
-[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ tree -L 1
-[?2004l[01;34m.[0m
+Script started on 2026-07-20 14:34:21+00:00 [TERM="dumb" TTY="/dev/pts/0" COLUMNS="148" LINES="46"]
+kartik@LAPTOP-NPJFOSTG:~$                                                                        kartik@LAPTOP-NPJFOSTG:~$ pwd
+/home/kartik
+kartik@LAPTOP-NPJFOSTG:~$ ls 
+1
+Devops_tools_practice
+Dockerfile
+My-Repository
+Project3
+ansible-docker
+ansiblefordocker.sh
+artifactory
+demo
+devops-project-09-Jenkins-CICD-with-ECS-ECR
+docker
+docker-compose.yml
+docker.sh
+file1
+file_10
+habit-tracker
+hello_world
+jenkins_home
+jf
+k8stws
+kartik
+keys
+kubernetes
+linux-cli-practice
+linux-commands.txt
+linux-navigation-commands.txt
+linux-practice
+naruto.pem
+playbooks
+session-manager-plugin.deb
+snap
+streakflow
+vishal
+kartik@LAPTOP-NPJFOSTG:~$ id 
+uid=1000(kartik) gid=1000(kartik) groups=1000(kartik),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),989(docker)
+kartik@LAPTOP-NPJFOSTG:~$ ls -l
+total 4088
+-rw-r--r--  1 kartik kartik    1040 Aug  1  2025 1
+drwxr-xr-x  3 kartik kartik    4096 Jul 17 10:14 Devops_tools_practice
+-rw-r--r--  1 kartik kartik     109 Feb 13 11:13 Dockerfile
+drwxr-xr-x  3 kartik kartik    4096 May 31  2025 My-Repository
+drwxr-xr-x  2 kartik kartik    4096 Mar 31 11:17 Project3
+drwxr-xr-x  3 kartik kartik    4096 Aug  1  2025 ansible-docker
+-rw-r--r--  1 kartik kartik     834 Aug  1  2025 ansiblefordocker.sh
+drwxr-xr-x  8   1030   1030    4096 Sep 29  2025 artifactory
+drwxr-xr-x  2 kartik kartik    4096 Jul 19 13:46 demo
+drwxr-xr-x  4 kartik kartik    4096 Dec 27  2025 devops-project-09-Jenkins-CICD-with-ECS-ECR
+drwxr-xr-x 10 kartik kartik    4096 Aug  1  2025 docker
+-rw-r--r--  1 kartik kartik     291 Feb 13 11:30 docker-compose.yml
+-rw-r--r--  1 kartik kartik    1774 Aug  1  2025 docker.sh
+drwxr-xr-x  2 kartik kartik    4096 Jul 17 11:04 file1
+-rw-r--r--  1 kartik kartik       0 Jul 19 13:51 file_10
+drwxr-xr-x  5 kartik kartik    4096 Apr 21 15:08 habit-tracker
+-rw-r--r--  1 kartik kartik      10 Mar  3 09:51 hello_world
+drwxr-xr-x 11 kartik kartik    4096 Dec 26  2025 jenkins_home
+-rw-r--r--  1 kartik kartik     179 Sep 29  2025 jf
+drwxr-xr-x  3 kartik kartik    4096 Oct 14  2025 k8stws
+-rw-r--r--  1 kartik kartik       6 Sep  2  2025 kartik
+drwxr-xr-x  2 kartik kartik    4096 Jul 27  2025 keys
+drwxr-xr-x  4 kartik kartik    4096 Oct 14  2025 kubernetes
+drwxr-xr-x  3 kartik kartik    4096 Jul 20 14:27 linux-cli-practice
+-rw-r--r--  1 kartik kartik    8563 Jul 19 14:14 linux-commands.txt
+-rw-r--r--  1 kartik kartik       0 Jul 20 14:34 linux-navigation-commands.txt
+drwxr-xr-x  5 kartik kartik    4096 Nov 13  2025 linux-practice
+-r--------  1 kartik kartik    1679 Aug 26  2025 naruto.pem
+drwxr-xr-x  2 kartik kartik    4096 Mar 30 10:50 playbooks
+-rw-r--r--  1 kartik kartik 4056060 May  5 10:57 session-manager-plugin.deb
+drwx------  4 kartik kartik    4096 May  5 10:56 snap
+drwxr-xr-x  4 kartik kartik    4096 Apr 26 13:58 streakflow
+-rw-rwxrwx  1 kartik kartik       0 Aug  2  2025 vishal
+kartik@LAPTOP-NPJFOSTG:~$ ls -la
+total 7772
+drwxr-x--- 33 kartik kartik    4096 Jul 20 14:33 .
+drwxr-xr-x  4 root   root      4096 Jul 19 13:52 ..
+drwxr-xr-x  6 kartik kartik    4096 Aug  1  2025 .ansible
+lrwxrwxrwx  1 kartik kartik      23 Sep 29  2025 .aws -> /mnt/c/Users/karti/.aws
+lrwxrwxrwx  1 kartik kartik      25 Sep 29  2025 .azure -> /mnt/c/Users/karti/.azure
+-rw-------  1 kartik kartik   53499 Jul 20 14:33 .bash_history
+-rw-r--r--  1 kartik kartik     220 May 24  2025 .bash_logout
+-rw-r--r--  1 kartik kartik    3771 May 24  2025 .bashrc
+drwx------  3 kartik kartik    4096 Oct 14  2025 .cache
+drwxr-xr-x  6 kartik kartik    4096 Jul 20 14:18 .config
+drwx------  6 kartik kartik    4096 Jul 10 15:54 .docker
+-rw-r--r--  1 kartik kartik     232 Jul 20 14:18 .gitconfig
+drwxr-xr-x  3 kartik kartik    4096 Oct 14  2025 .kube
+drwxr-xr-x  2 kartik kartik    4096 May 24  2025 .landscape
+-rw-------  1 kartik kartik      40 Jul 18 14:00 .lesshst
+-rw-r--r--  1 root   root   3612672 Jul 19 14:12 .linux-commands.txt.swp
+drwxr-xr-x  3 kartik kartik    4096 Jun  1  2025 .local
+drwxr-xr-x 10 kartik kartik    4096 Oct 14  2025 .minikube
+-rw-r--r--  1 kartik kartik       0 Jul 20 13:59 .motd_shown
+-rw-r--r--  1 kartik kartik     807 May 24  2025 .profile
+-rw-r--r--  1 kartik kartik      66 Jun  1  2025 .selected_editor
+drwx------  2 kartik kartik    4096 Dec 17  2025 .ssh
+-rw-r--r--  1 kartik kartik       0 May 24  2025 .sudo_as_admin_successful
+drwxr-xr-x  2 kartik kartik    4096 Jul 14 13:15 .terraform.d
+drwxr-xr-x  2 kartik kartik    4096 Jul 27  2025 .vim
+-rw-------  1 kartik kartik   16341 Apr 20 06:08 .viminfo
+drwxr-xr-x  3 kartik kartik    4096 Dec 15  2025 .vscode-server
+-rw-r--r--  1 kartik kartik     429 May 13 09:58 .wget-hsts
+-rw-r--r--  1 kartik kartik    1040 Aug  1  2025 1
+drwxr-xr-x  3 kartik kartik    4096 Jul 17 10:14 Devops_tools_practice
+-rw-r--r--  1 kartik kartik     109 Feb 13 11:13 Dockerfile
+drwxr-xr-x  3 kartik kartik    4096 May 31  2025 My-Repository
+drwxr-xr-x  2 kartik kartik    4096 Mar 31 11:17 Project3
+drwxr-xr-x  3 kartik kartik    4096 Aug  1  2025 ansible-docker
+-rw-r--r--  1 kartik kartik     834 Aug  1  2025 ansiblefordocker.sh
+drwxr-xr-x  8   1030   1030    4096 Sep 29  2025 artifactory
+drwxr-xr-x  2 kartik kartik    4096 Jul 19 13:46 demo
+drwxr-xr-x  4 kartik kartik    4096 Dec 27  2025 devops-project-09-Jenkins-CICD-with-ECS-ECR
+drwxr-xr-x 10 kartik kartik    4096 Aug  1  2025 docker
+-rw-r--r--  1 kartik kartik     291 Feb 13 11:30 docker-compose.yml
+-rw-r--r--  1 kartik kartik    1774 Aug  1  2025 docker.sh
+drwxr-xr-x  2 kartik kartik    4096 Jul 17 11:04 file1
+-rw-r--r--  1 kartik kartik       0 Jul 19 13:51 file_10
+drwxr-xr-x  5 kartik kartik    4096 Apr 21 15:08 habit-tracker
+-rw-r--r--  1 kartik kartik      10 Mar  3 09:51 hello_world
+drwxr-xr-x 11 kartik kartik    4096 Dec 26  2025 jenkins_home
+-rw-r--r--  1 kartik kartik     179 Sep 29  2025 jf
+drwxr-xr-x  3 kartik kartik    4096 Oct 14  2025 k8stws
+-rw-r--r--  1 kartik kartik       6 Sep  2  2025 kartik
+drwxr-xr-x  2 kartik kartik    4096 Jul 27  2025 keys
+drwxr-xr-x  4 kartik kartik    4096 Oct 14  2025 kubernetes
+drwxr-xr-x  3 kartik kartik    4096 Jul 20 14:27 linux-cli-practice
+-rw-r--r--  1 kartik kartik    8563 Jul 19 14:14 linux-commands.txt
+-rw-r--r--  1 kartik kartik       0 Jul 20 14:34 linux-navigation-commands.txt
+drwxr-xr-x  5 kartik kartik    4096 Nov 13  2025 linux-practice
+-r--------  1 kartik kartik    1679 Aug 26  2025 naruto.pem
+drwxr-xr-x  2 kartik kartik    4096 Mar 30 10:50 playbooks
+-rw-r--r--  1 kartik kartik 4056060 May  5 10:57 session-manager-plugin.deb
+drwx------  4 kartik kartik    4096 May  5 10:56 snap
+drwxr-xr-x  4 kartik kartik    4096 Apr 26 13:58 streakflow
+-rw-rwxrwx  1 kartik kartik       0 Aug  2  2025 vishal
+kartik@LAPTOP-NPJFOSTG:~$ ls -a
+.			   My-Repository
+..			   Project3
+.ansible		   ansible-docker
+.aws			   ansiblefordocker.sh
+.azure			   artifactory
+.bash_history		   demo
+.bash_logout		   devops-project-09-Jenkins-CICD-with-ECS-ECR
+.bashrc			   docker
+.cache			   docker-compose.yml
+.config			   docker.sh
+.docker			   file1
+.gitconfig		   file_10
+.kube			   habit-tracker
+.landscape		   hello_world
+.lesshst		   jenkins_home
+.linux-commands.txt.swp    jf
+.local			   k8stws
+.minikube		   kartik
+.motd_shown		   keys
+.profile		   kubernetes
+.selected_editor	   linux-cli-practice
+.ssh			   linux-commands.txt
+.sudo_as_admin_successful  linux-navigation-commands.txt
+.terraform.d		   linux-practice
+.vim			   naruto.pem
+.viminfo		   playbooks
+.vscode-server		   session-manager-plugin.deb
+.wget-hsts		   snap
+1			   streakflow
+Devops_tools_practice	   vishal
+Dockerfile
+kartik@LAPTOP-NPJFOSTG:~$ cd vis   streakflow/
+kartik@LAPTOP-NPJFOSTG:~/streakflow$ cd ..
+kartik@LAPTOP-NPJFOSTG:~$ mkdir -p folder1
+kartik@LAPTOP-NPJFOSTG:~$ ls | grep folder1/ 
+folder1
+kartik@LAPTOP-NPJFOSTG:~$ rmdir folder1/
+kartik@LAPTOP-NPJFOSTG:~$ rmdir folder1/ls | grep folder1
+kartik@LAPTOP-NPJFOSTG:~$ tree -L 1
+.
 ├── 1
-├── [01;34mDevops_tools_practice[0m
+├── Devops_tools_practice
 ├── Dockerfile
-├── [01;34mMy-Repository[0m
-├── [01;34mProject3[0m
-├── [01;34mansible-docker[0m
+├── My-Repository
+├── Project3
+├── ansible-docker
 ├── ansiblefordocker.sh
-├── [01;34martifactory[0m
-├── [01;34mdemo[0m
-├── [01;34mdevops-project-09-Jenkins-CICD-with-ECS-ECR[0m
-├── [01;34mdocker[0m
+├── artifactory
+├── demo
+├── devops-project-09-Jenkins-CICD-with-ECS-ECR
+├── docker
 ├── docker-compose.yml
 ├── docker.sh
-├── [01;34mfile1[0m
+├── file1
 ├── file_10
-├── [01;34mhabit-tracker[0m
+├── habit-tracker
 ├── hello_world
-├── [01;34mjenkins_home[0m
+├── jenkins_home
 ├── jf
-├── [01;34mk8stws[0m
+├── k8stws
 ├── kartik
-├── [01;34mkeys[0m
-├── [01;34mkubernetes[0m
-├── [01;34mlinux-cli-practice[0m
+├── keys
+├── kubernetes
+├── linux-cli-practice
 ├── linux-commands.txt
 ├── linux-navigation-commands.txt
-├── [01;34mlinux-practice[0m
+├── linux-practice
 ├── naruto.pem
-├── [01;34mplaybooks[0m
-├── [01;31msession-manager-plugin.deb[0m
-├── [01;34msnap[0m
-├── [01;34mstreakflow[0m
-└── [01;32mvishal[0m
+├── playbooks
+├── session-manager-plugin.deb
+├── snap
+├── streakflow
+└── vishal
 
 20 directories, 14 files
-[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ c [Kat [K[K[Kd m[KMY[Ky-Repository/
-[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~/My-Repository[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~/My-Repository[00m$ ls
-[?2004lREADME.md  index.html
-[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~/My-Repository[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~/My-Repository[00m$ cd ..
-[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ exec bash
-[?2004l[?2004h]0;kartik@LAPTOP-NPJFOSTG: ~[01;32mkartik@LAPTOP-NPJFOSTG[00m:[01;34m~[00m$ exit
-[?2004lexit
+kartik@LAPTOP-NPJFOSTG:~$ find . -name "*.sh"sfind . -name "*.sh"ufind . -name "*.sh"dfind . -name "*.sh"ofind . -name "*.sh" find . -name "*.sh"
+./.ansible/collections/ansible_collections/community/docker/tests/utils/shippable/linux.sh
+./.ansible/collections/ansible_collections/community/docker/tests/utils/shippable/linux-community.sh
+./.ansible/collections/ansible_collections/community/docker/tests/utils/shippable/fedora.sh
+./.ansible/collections/ansible_collections/community/docker/tests/utils/shippable/remote.sh
+./.ansible/collections/ansible_collections/community/docker/tests/utils/shippable/ubuntu.sh
+./.ansible/collections/ansible_collections/community/docker/tests/utils/shippable/rhel.sh
+./.ansible/collections/ansible_collections/community/docker/tests/utils/shippable/shippable.sh
+./.ansible/collections/ansible_collections/community/docker/tests/utils/shippable/units.sh
+./.ansible/collections/ansible_collections/community/docker/tests/utils/shippable/sanity.sh
+./.ansible/collections/ansible_collections/community/docker/tests/utils/shippable/alpine.sh
+./.ansible/collections/ansible_collections/community/docker/tests/integration/targets/connection_posix/test.sh
+./.ansible/collections/ansible_collections/community/docker/tests/integration/targets/connection_docker/runme.sh
+./.ansible/collections/ansible_collections/community/docker/tests/integration/targets/connection_docker/runme-connection.sh
+./.ansible/collections/ansible_collections/community/docker/tests/integration/targets/inventory_docker_swarm/runme.sh
+./.ansible/collections/ansible_collections/community/docker/tests/integration/targets/connection_nsenter/runme.sh
+./.ansible/collections/ansible_collections/community/docker/tests/integration/targets/connection_nsenter/runme-connection.sh
+./.ansible/collections/ansible_collections/community/docker/tests/integration/targets/inventory_docker_machine/runme.sh
+./.ansible/collections/ansible_collections/community/docker/tests/integration/targets/connection_docker_api/runme.sh
+./.ansible/collections/ansible_collections/community/docker/tests/integration/targets/connection_docker_api/runme-connection.sh
+./.ansible/collections/ansible_collections/community/docker/tests/integration/targets/inventory_docker_containers/runme.sh
+./.ansible/collections/ansible_collections/community/docker/tests/integration/targets/connection/test.sh
+./.ansible/collections/ansible_collections/community/docker/tests/images/copy-images.sh
+./.ansible/collections/ansible_collections/community/docker/tests/images/healthcheck/build.sh
+./.ansible/collections/ansible_collections/community/docker/tests/images/simple-2/build.sh
+./.ansible/collections/ansible_collections/community/docker/tests/images/simple-1/build.sh
+./.ansible/collections/ansible_collections/community/docker/tests/images/build.sh
+./.ansible/collections/ansible_collections/community/docker/.azure-pipelines/scripts/process-results.sh
+./.ansible/collections/ansible_collections/community/docker/.azure-pipelines/scripts/aggregate-coverage.sh
+./.ansible/collections/ansible_collections/community/docker/.azure-pipelines/scripts/report-coverage.sh
+./.ansible/collections/ansible_collections/community/docker/.azure-pipelines/scripts/run-tests.sh
+./streakflow/setup.sh
+./docker.sh
+./k8stws/k8s-kind-voting-app/result/tests/tests.sh
+./k8stws/k8s-kind-voting-app/healthchecks/postgres.sh
+./k8stws/k8s-kind-voting-app/healthchecks/redis.sh
+./k8stws/k8s-kind-voting-app/kind-cluster/install_kind.sh
+./k8stws/k8s-kind-voting-app/kind-cluster/install_kubectl.sh
+./k8stws/k8s-kind-voting-app/k8s-specifications/get_helm.sh
+./k8stws/k8s-kind-voting-app/seed-data/generate-votes.sh
+./ansiblefordocker.sh
+./devops-project-09-Jenkins-CICD-with-ECS-ECR/scripts/update-ecs-service.sh
+./devops-project-09-Jenkins-CICD-with-ECS-ECR/scripts/register-task-def.sh
+kartik@LAPTOP-NPJFOSTG:~$ exit
+exit
 
-Script done on 2026-07-20 14:26:37+00:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2026-07-20 14:35:56+00:00 [COMMAND_EXIT_CODE="0"]
