@@ -1,5 +1,5 @@
-Script started on 2026-07-25 15:13:20+00:00 [TERM="dumb" TTY="/dev/pts/2" COLUMNS="148" LINES="46"]
-kartik@LAPTOP-NPJFOSTG:~$ cat docker-compose.yml 
+Script started on 2026-07-25 15:24:52+00:00 [TERM="bumb" TTY="/dev/pts/0" COLUMNS="148" LINES="46"]
+kartik@LAPTOP-NPJFOSTG:~$ exittail -n 5 docker.shexit               TERM=dumb script linux-viewing-files-commands.txtkartik@LAPTOP-NPJFOSTG:~$ exit                                             kartik@LAPTOP-NPJFOSTG:~$ exittail -n 5 docker.shexit                   cat docker-compose.yml 
 version: '3'
 
 services:
@@ -17,19 +17,78 @@ services:
 volumes:
   jenkins-data:
 
-kartik@LAPTOP-NPJFOSTG:~$ head -n5 docker-compose.yml 
-version: '3'
+kartik@LAPTOP-NPJFOSTG:~$ ta  less docker-compose.yml 
+WARNING: terminal is not fully functional
+Press RETURN to continue 
+version: '3'
 
 services:
   jenkins:
     image: jenkins/jenkins:lts
-kartik@LAPTOP-NPJFOSTG:~$ head -n5 docker-compose.yml kartik@LAPTOP-NPJFOSTG:~$ kartik@LAPTOP-NPJFOSTG:~$ hkartik@LAPTOP-NPJFOSTG:~$ hekartik@LAPTOP-NPJFOSTG:~$ heakartik@LAPTOP-NPJFOSTG:~$ headkartik@LAPTOP-NPJFOSTG:~$ head -n5 docker-compose.yml  -n5 docker-compose.yml  -n5 docker-compose.yml  -n5 docker-compose.yml  -n5 docker-compose.yml  t-n5 docker-compose.yml a-n5 docker-compose.yml i-n5 docker-compose.yml l-n5 docker-compose.yml  -n5 docker-compose.yml 
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins-data:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
     user: root
 
 volumes:
   jenkins-data:
 
-kartik@LAPTOP-NPJFOSTG:~$ more      exit
+docker-compose.yml (END)(END) ESCESC[[BB(END) ESCESC[[BB(END) ESCESC[[BB(END)kartik@LAPTOP-NPJFOSTG:~$ l head -n5 docker.sh
+#!/bin/bash
+
+# ===== Configuration =====
+CONTAINER_NAME="ansible_node"
+IMAGE_NAME="ubuntu:20.04"
+kartik@LAPTOP-NPJFOSTG:~$ head -n5 docker.sh                  tail -n 5 docker.sh
+echo "Test connection with:"
+echo "ansible -i $INVENTORY_FILE docker_nodes -m ping"
+echo ""
+echo "Then run your playbooks as usual."
+
+kartik@LAPTOP-NPJFOSTG:~$ more od  docker-compose.yml              .sh
+#!/bin/bash
+
+# ===== Configuration =====
+CONTAINER_NAME="ansible_node"
+IMAGE_NAME="ubuntu:20.04"
+ROOT_PASSWORD="kartik123"  # Change if needed
+ANSIBLE_DIR="$HOME/ansible-docker"  # Change if your hosts.ini is elsewhere
+INVENTORY_FILE="$ANSIBLE_DIR/hosts.ini"
+
+echo "🔹 Creating Docker container for Ansible..."
+
+# 1️⃣ Ensure Ansible project directory exists
+mkdir -p "$ANSIBLE_DIR"
+
+# 2️⃣ Ensure hosts.ini exists
+if [ ! -f "$INVENTORY_FILE" ]; then
+    echo "[docker_nodes]" > "$INVENTORY_FILE"
+fi
+
+# 3️⃣ Pull Ubuntu image if not already present
+docker pull $IMAGE_NAME
+
+# 4️⃣ Run container in background
+--More--(35%)docker run -dit --name $CONTAINER_NAME --hostname ansible-node $IMAGE_NAME
+--More--(39%)             kartik@LAPTOP-NPJFOSTG:~$ exi   tail -5   f /var/log/syslog | gre  p error
+^C
+kartik@LAPTOP-NPJFOSTG:~$ tail -f /var/log/syslog | grep errorkartik@LAPTOP-NPJFOSTG:~$ tail -f /var/log/syslog | grep error            
+2026-07-25T15:25:13.663116+00:00 LAPTOP-NPJFOSTG wsl-pro-service[239]: #033[36mINFO#033[0m Reconnecting to Windows host in 60 seconds
+2026-07-25T15:25:13.663133+00:00 LAPTOP-NPJFOSTG wsl-pro-service[239]: #033[37mDEBUG#033[0m Updated systemd status to "Not connected: waiting to retry"
+2026-07-25T15:25:20.673582+00:00 LAPTOP-NPJFOSTG systemd-resolved[203]: Clock change detected. Flushing caches.
+2026-07-25T15:25:53.992454+00:00 LAPTOP-NPJFOSTG systemd-resolved[203]: Clock change detected. Flushing caches.
+2026-07-25T15:26:15.662363+00:00 LAPTOP-NPJFOSTG wsl-pro-service[239]: #033[36mINFO#033[0m Daemon: connecting to Windows Agent
+2026-07-25T15:26:15.662520+00:00 LAPTOP-NPJFOSTG wsl-pro-service[239]: #033[37mDEBUG#033[0m Updated systemd status to "Connecting"
+2026-07-25T15:26:15.680247+00:00 LAPTOP-NPJFOSTG wsl-pro-service[239]: #033[33mWARNING#033[0m Daemon: could not connect to Windows Agent: could not get address: could not read agent port file "/mnt/c/Users/karti/.ubuntupro/.address": open /mnt/c/Users/karti/.ubuntupro/.address: no such file or directory
+2026-07-25T15:26:15.680366+00:00 LAPTOP-NPJFOSTG wsl-pro-service[239]: #033[36mINFO#033[0m Reconnecting to Windows host in 60 seconds
+2026-07-25T15:26:15.680402+00:00 LAPTOP-NPJFOSTG wsl-pro-service[239]: #033[37mDEBUG#033[0m Updated systemd status to "Not connected: waiting to retry"
+2026-07-25T15:26:27.447778+00:00 LAPTOP-NPJFOSTG systemd-resolved[203]: Clock change detected. Flushing caches.
+q ^C
+kartik@LAPTOP-NPJFOSTG:~$ exit
 exit
 
-Script done on 2026-07-25 15:14:00+00:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2026-07-25 15:27:03+00:00 [COMMAND_EXIT_CODE="130"]
