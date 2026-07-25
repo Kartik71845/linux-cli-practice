@@ -1,0 +1,35 @@
+Script started on 2026-07-25 15:13:20+00:00 [TERM="dumb" TTY="/dev/pts/2" COLUMNS="148" LINES="46"]
+kartik@LAPTOP-NPJFOSTG:~$ cat docker-compose.yml 
+version: '3'
+
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins-data:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    user: root
+
+volumes:
+  jenkins-data:
+
+kartik@LAPTOP-NPJFOSTG:~$ head -n5 docker-compose.yml 
+version: '3'
+
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+kartik@LAPTOP-NPJFOSTG:~$ head -n5 docker-compose.yml kartik@LAPTOP-NPJFOSTG:~$ kartik@LAPTOP-NPJFOSTG:~$ hkartik@LAPTOP-NPJFOSTG:~$ hekartik@LAPTOP-NPJFOSTG:~$ heakartik@LAPTOP-NPJFOSTG:~$ headkartik@LAPTOP-NPJFOSTG:~$ head -n5 docker-compose.yml  -n5 docker-compose.yml  -n5 docker-compose.yml  -n5 docker-compose.yml  -n5 docker-compose.yml  t-n5 docker-compose.yml a-n5 docker-compose.yml i-n5 docker-compose.yml l-n5 docker-compose.yml  -n5 docker-compose.yml 
+    user: root
+
+volumes:
+  jenkins-data:
+
+kartik@LAPTOP-NPJFOSTG:~$ more      exit
+exit
+
+Script done on 2026-07-25 15:14:00+00:00 [COMMAND_EXIT_CODE="0"]
